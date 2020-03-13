@@ -18,7 +18,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "my-kita",
       "kebab-case"
     ],
     "import-blacklist": [
