@@ -1,4 +1,34 @@
-<h1>{{ title }}</h1>
-<a routerLink="login">Login</a>
-<a routerLink="dashboard">Dashboard</a>
-<router-outlet></router-outlet>
+<div class="columns">
+    <div class="column is-narrow">
+        <div class="box" style="width: 200px;">
+            <p class="title is-5">Narrow column</p>
+            <p class="subtitle">This column is only 200px wide.</p>
+            <my-kita-menu></my-kita-menu>
+        </div>
+    </div>
+    <div class="column">
+        <div class="box">
+            <div class="columns">
+                <div class="column">
+                    First column
+                </div>
+                <div class="column">
+                    Second column
+                </div>
+                <div class="column">
+                    Third column
+                </div>
+                <div class="column">
+                    Fourth column
+                </div>
+            </div>
+            <p class="title is-5">Flexible column</p>
+            <p class="subtitle">This column will take up the remaining space available.</p>
+            <h1>{{ title }}</h1>
+            <button class="button">Los geht's!</button>
+            <a routerLink="login">Login</a>
+            <a routerLink="dashboard">Dashboard</a>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
