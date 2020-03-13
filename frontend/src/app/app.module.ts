@@ -6,12 +6,14 @@ import {DashboardModule} from './view/dashboard/dashboard.module';
 import {LoginModule} from './view/login/login.module';
 import { MenuComponent } from './component/menu/menu.component';
 import { MenuItemComponent } from './component/menu/menu-item/menu-item.component';
+import { NavigationComponent } from './component/navigation/navigation.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         MenuComponent,
         MenuItemComponent,
+        NavigationComponent,
     ],
     imports: [
         BrowserModule,
