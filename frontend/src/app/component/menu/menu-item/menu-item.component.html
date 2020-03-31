@@ -1,1 +1,15 @@
-<p>menu-item works!</p>
+<ng-container *ngIf="menuItem">
+    <ng-container *ngIf="menuItem.label">
+        <p class="menu-label">{{ menuItem.label }}</p>
+    </ng-container>
+    <ul class="menu-list">
+        <ng-container *ngFor="let menuEntry of menuItem.items">
+            <li>
+                <a routerLink="{{ menuEntry.link }}">
+                    <i [ngClass]="'fas fa-' + menuEntry.icon"></i>
+                    {{ menuEntry.name }}
+                </a>
+            </li>
+        </ng-container>
+    </ul>
+</ng-container>

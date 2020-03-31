@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Menu} from '../../../../model/menu.model';
 
 @Component({
   selector: 'my-kita-menu-item',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-item.component.scss']
 })
 export class MenuItemComponent implements OnInit {
+
+  @Input() menuItem: Menu | undefined;
 
   constructor() { }
 

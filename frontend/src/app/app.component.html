@@ -1,17 +1,21 @@
-<div class="columns">
+<div class="columns is-gapless">
+    <div class="column is-narrow is-flex">
+        <div class="box" style="width: 200px;">
+            <my-kita-menu></my-kita-menu>
+        </div>
+    </div>
     <div class="column">
-        <my-kita-navigation></my-kita-navigation>
-        <div class="columns">
-            <div class="column is-narrow">
-                <div class="box" style="width: 200px;">
-                    <my-kita-menu></my-kita-menu>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box">
-                    <router-outlet></router-outlet>
-                </div>
-            </div>
+        <div class="box">
+            <my-kita-navigation></my-kita-navigation>
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>MyKiTa
+            <i class="far fa-copyright"></i>
+            Andreas Pöhler
+        </p>
+    </div>
+</footer>
